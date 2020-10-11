@@ -9,6 +9,4 @@ TEST_CASE("rogue testing", "[Rogue]") {
         REQUIRE(rogue->getHitPointsLimit() == 100);
         REQUIRE(rogue->getDamage() == 10);
     }
-    
-    
 }
