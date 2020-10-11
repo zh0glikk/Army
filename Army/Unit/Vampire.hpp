@@ -6,7 +6,7 @@
 #include "Unit.hpp"
 #include "../Weapon/Bite.hpp"
 
-#include "InfectMediator.hpp"
+#include "../Mediator/InfectMediator.hpp"
 
 class Vampire : public Unit{
 public:

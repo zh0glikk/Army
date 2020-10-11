@@ -3,5 +3,6 @@
 
 class UnitIsDead {};
 class CantUseIt  {};
+class LowMana {};
 
 #endif /* Exceptions_h */

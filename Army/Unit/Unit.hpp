@@ -30,8 +30,8 @@ public:
     virtual void attack(Unit* other);
     virtual void counterAttack(Unit* other);
     
-    void takeDamage(int dmg);
-    void takeMagicDamage(int dmg);
+    virtual void takeDamage(int dmg);
+    virtual void takeMagicDamage(int dmg);
     
     void addHp(int hp);
     

@@ -1,9 +1,24 @@
-//
-//  VampireTest.cpp
-//  Army
-//
-//  Created by Mac on 11.10.2020.
-//  Copyright © 2020 Mac. All rights reserved.
-//
+#include "../Unit/Vampire.hpp"
+#include "../Unit/Soldier.hpp"
+#include "catch.hpp"
 
-#include <stdio.h>
+
+TEST_CASE("vampire vs soldier", "[Vampire]") {
+    Vampire* vmp = new Vampire("Vampire", 100, 10);
+    Soldier* sld = new Soldier("Soldier", 100, 10);
+    
+    
+    SECTION("Test soldier attack") {
+        sld->attack(vmp);
+        
+        REQUIRE(vmp->getHitPoints() == 90);
+        REQUIRE(sld->getHitPoints() == 95);
+        
+        vmp->attack(sld);
+        
+        REQUIRE(vmp->getHitPoints() == 90);
+        REQUIRE(sld->getHitPoints() == 85);
+    }
+    
+    
+}

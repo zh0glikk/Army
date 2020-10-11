@@ -5,6 +5,8 @@
 #include "../Weapon/WerewolfWeapon.hpp"
 #include "../State/WolfState.hpp"
 
+#include "../Mediator/InfectMediator.hpp"
+
 class Werewolf : public Unit {
 private:
     bool isWolf = false;

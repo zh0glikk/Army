@@ -11,6 +11,7 @@ public:
     Berserker(const std::string& name = "Berserker", int hp = 70, int dmg = 15);
     ~Berserker();
     
+    void takeMagicDamage(int dmg);
 };
 
 

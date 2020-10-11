@@ -9,7 +9,7 @@ Bite::~Bite() {
 void Bite::attack(Unit* enemy) {
     enemy->takeDamage(this->owner->getDamage());
     
-    this->owner->addHp(enemy->getHitPoints()/10);
+    this->owner->addHp(this->owner->getDamage()/2);
     
     if ( enemy->getHitPoints() > 0 ) {
         counterAttack(enemy);

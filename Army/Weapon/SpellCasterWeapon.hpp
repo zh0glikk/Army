@@ -1,14 +1,15 @@
-//
-//  SpellCasterWeapon.hpp
-//  Army
-//
-//  Created by Mac on 11.10.2020.
-//  Copyright © 2020 Mac. All rights reserved.
-//
-
 #ifndef SpellCasterWeapon_hpp
 #define SpellCasterWeapon_hpp
 
-#include <stdio.h>
+#include "Weapon.hpp"
+
+class SpellCasterWeapon : public Weapon {
+public:
+    SpellCasterWeapon(Unit* owner);
+    ~SpellCasterWeapon();
+    
+    void attack(Unit* enemy);
+    void counterAttack(Unit* enemy);
+};
 
 #endif /* SpellCasterWeapon_hpp */

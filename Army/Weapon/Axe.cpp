@@ -7,8 +7,6 @@ Axe::~Axe() {
 }
 
 void Axe::attack(Unit* enemy) {
-    std::cout << "Axe ATTTAAAACK  " << owner->getName() << " -> " << enemy->getName() <<
-    std::endl;
     enemy->takeDamage(this->owner->getDamage());
 
     if ( enemy->getHitPoints() > 0 ) {
