@@ -4,10 +4,11 @@
 #include <iostream>
 #include "../Unit/Unit.hpp"
 
+class Unit;
 
 class Mediator {
 public:
-    virtual void notify(Unit* sender, std::string event) = 0;
+    virtual void notify(Unit* victim, std::string event) const = 0;
 };
 
 #endif /* Mediator_hpp */

@@ -9,5 +9,7 @@ Vampire::~Vampire() {
 }
 
 void Vampire::infect(Unit* other) {
-    
+    InfectMediator* infMediator = new InfectMediator(this, other);
+    this->mediator->notify(other, "Vampire Infect");
+    delete infMediator;
 }

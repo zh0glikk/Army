@@ -1,6 +1,7 @@
 #include "Unit.hpp"
 
 Unit::Unit(const std::string& name, int hp, int dmg) {
+    this->mediator = nullptr;
     this->state = new State(name, hp, dmg);
 }
 
@@ -44,6 +45,14 @@ void Unit::takeMagicDamage(int dmg) {
 
 void Unit::addHp(int hp) {
     this->state->addHp(hp);
+}
+
+void Unit::setMediator(Mediator *mediator) {
+    this->mediator = mediator;
+}
+
+void Unit::changeWeapon(Weapon* weapon) {
+    this->weapon = weapon;
 }
 
 std::ostream& operator<<(std::ostream& out, const Unit& unit) {

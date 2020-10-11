@@ -1,18 +1,21 @@
-#include <iostream>
+#define CATCH_CONFIG_MAIN
+#include "Tests/catch.hpp"
 
-#include "Unit/Unit.hpp"
-#include "Unit/Soldier.hpp"
-#include "Rogue.hpp"
-#include "Berserker.hpp"
-#include "Vampire.hpp"
-#include "Werewolf.hpp"
+//#include <iostream>
+//
+//#include "Unit/Unit.hpp"
+//#include "Unit/Soldier.hpp"
+//#include "Rogue.hpp"
+//#include "Berserker.hpp"
+//#include "Vampire.hpp"
+//#include "Werewolf.hpp"
+//
+//#include "Weapon/Axe.hpp"
+//#include "Weapon/Sword.hpp"
+//#include "Weapon/Dagger.hpp"
+//#include "Weapon/Bite.hpp"
 
-#include "Weapon/Axe.hpp"
-#include "Weapon/Sword.hpp"
-#include "Weapon/Dagger.hpp"
-#include "Weapon/Bite.hpp"
-
-
+/*
 int main(int argc, const char * argv[]) {
 //    Rogue *u1 = new Rogue("Rogue", 50, 20);
     Soldier *u2 = new Soldier("Soldier", 100, 10);
@@ -42,4 +45,4 @@ int main(int argc, const char * argv[]) {
     std::cout << *u4 << std::endl;
     
     return 0;
-}
+} */

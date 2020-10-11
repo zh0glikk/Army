@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040B8B7C252CE39E005A887B /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B7B252CE39E005A887B /* State.cpp */; };
+		040B8B84252CE839005A887B /* SpellCaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B82252CE839005A887B /* SpellCaster.cpp */; };
+		040B8B88252CF448005A887B /* Spell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B86252CF448005A887B /* Spell.cpp */; };
+		040B8B8D252CF536005A887B /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B8B252CF536005A887B /* Weapon.cpp */; };
+		040B8B90252CFF9C005A887B /* Axe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B8E252CFF9C005A887B /* Axe.cpp */; };
+		040B8B96252D0592005A887B /* Soldier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B94252D0592005A887B /* Soldier.cpp */; };
+		040B8B99252D0973005A887B /* Sword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B97252D0973005A887B /* Sword.cpp */; };
+		040B8B9C252D0F49005A887B /* Rogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B9A252D0F49005A887B /* Rogue.cpp */; };
+		0459FDAB252A73000008CE25 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0459FDAA252A73000008CE25 /* main.cpp */; };
+		0459FDB3252A73490008CE25 /* Unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0459FDB1252A73490008CE25 /* Unit.cpp */; };
+		047100FA2531DC89009422FD /* SoldierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047100F92531DC89009422FD /* SoldierTest.swift */; };
+		0479702A252F982F00FE6A99 /* InfectedState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04797028252F982F00FE6A99 /* InfectedState.cpp */; };
+		0479702D252F9B2B00FE6A99 /* Werewolf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0479702B252F9B2B00FE6A99 /* Werewolf.cpp */; };
+		04797030252F9BD500FE6A99 /* WerewolfWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0479702E252F9BD500FE6A99 /* WerewolfWeapon.cpp */; };
+		04797033252F9DC500FE6A99 /* WolfState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04797031252F9DC500FE6A99 /* WolfState.cpp */; };
+		04B0623F252DC87F00E1649B /* Dagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B0623D252DC87F00E1649B /* Dagger.cpp */; };
+		04BC08612531E736003B6953 /* RogueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04BC08602531E736003B6953 /* RogueTest.cpp */; };
+		04D7D0A2252E24E3000242FB /* Berserker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D7D0A0252E24E3000242FB /* Berserker.cpp */; };
+		04D7D0A5252E26F8000242FB /* Vampire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D7D0A3252E26F8000242FB /* Vampire.cpp */; };
+		04D7D0A8252E27AB000242FB /* Bite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D7D0A6252E27AB000242FB /* Bite.cpp */; };
+		04E46DDB2530910C009461C4 /* InfectMediator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E46DD92530910C009461C4 /* InfectMediator.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0459FDA5252A73000008CE25 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		040B8B7A252CE345005A887B /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		040B8B7B252CE39E005A887B /* State.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		040B8B82252CE839005A887B /* SpellCaster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpellCaster.cpp; sourceTree = "<group>"; };
+		040B8B83252CE839005A887B /* SpellCaster.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpellCaster.hpp; sourceTree = "<group>"; };
+		040B8B86252CF448005A887B /* Spell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spell.cpp; sourceTree = "<group>"; };
+		040B8B87252CF448005A887B /* Spell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Spell.hpp; sourceTree = "<group>"; };
+		040B8B8B252CF536005A887B /* Weapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Weapon.cpp; sourceTree = "<group>"; };
+		040B8B8C252CF536005A887B /* Weapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Weapon.hpp; sourceTree = "<group>"; };
+		040B8B8E252CFF9C005A887B /* Axe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axe.cpp; sourceTree = "<group>"; };
+		040B8B8F252CFF9C005A887B /* Axe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Axe.hpp; sourceTree = "<group>"; };
+		040B8B94252D0592005A887B /* Soldier.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Soldier.cpp; sourceTree = "<group>"; };
+		040B8B95252D0592005A887B /* Soldier.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Soldier.hpp; sourceTree = "<group>"; };
+		040B8B97252D0973005A887B /* Sword.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sword.cpp; sourceTree = "<group>"; };
+		040B8B98252D0973005A887B /* Sword.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Sword.hpp; sourceTree = "<group>"; };
+		040B8B9A252D0F49005A887B /* Rogue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rogue.cpp; sourceTree = "<group>"; };
+		040B8B9B252D0F49005A887B /* Rogue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rogue.hpp; sourceTree = "<group>"; };
+		0459FDA7252A73000008CE25 /* Army */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Army; sourceTree = BUILT_PRODUCTS_DIR; };
+		0459FDAA252A73000008CE25 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0459FDB1252A73490008CE25 /* Unit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Unit.cpp; sourceTree = "<group>"; };
+		0459FDB2252A73490008CE25 /* Unit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Unit.hpp; sourceTree = "<group>"; };
+		047100F72531DC89009422FD /* SoldierTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoldierTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047100F92531DC89009422FD /* SoldierTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldierTest.swift; sourceTree = "<group>"; };
+		047100FB2531DC89009422FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04797028252F982F00FE6A99 /* InfectedState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InfectedState.cpp; sourceTree = "<group>"; };
+		04797029252F982F00FE6A99 /* InfectedState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InfectedState.hpp; sourceTree = "<group>"; };
+		0479702B252F9B2B00FE6A99 /* Werewolf.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Werewolf.cpp; sourceTree = "<group>"; };
+		0479702C252F9B2B00FE6A99 /* Werewolf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Werewolf.hpp; sourceTree = "<group>"; };
+		0479702E252F9BD500FE6A99 /* WerewolfWeapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WerewolfWeapon.cpp; sourceTree = "<group>"; };
+		0479702F252F9BD500FE6A99 /* WerewolfWeapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WerewolfWeapon.hpp; sourceTree = "<group>"; };
+		04797031252F9DC500FE6A99 /* WolfState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WolfState.cpp; sourceTree = "<group>"; };
+		04797032252F9DC500FE6A99 /* WolfState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WolfState.hpp; sourceTree = "<group>"; };
+		04B0623D252DC87F00E1649B /* Dagger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dagger.cpp; sourceTree = "<group>"; };
+		04B0623E252DC87F00E1649B /* Dagger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dagger.hpp; sourceTree = "<group>"; };
+		04B06241252DD0A600E1649B /* Exceptions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
+		04BC08602531E736003B6953 /* RogueTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RogueTest.cpp; sourceTree = "<group>"; };
+		04BC08622531E759003B6953 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
+		04D7D0A0252E24E3000242FB /* Berserker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Berserker.cpp; sourceTree = "<group>"; };
+		04D7D0A1252E24E3000242FB /* Berserker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Berserker.hpp; sourceTree = "<group>"; };
+		04D7D0A3252E26F8000242FB /* Vampire.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vampire.cpp; sourceTree = "<group>"; };
+		04D7D0A4252E26F8000242FB /* Vampire.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vampire.hpp; sourceTree = "<group>"; };
+		04D7D0A6252E27AB000242FB /* Bite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bite.cpp; sourceTree = "<group>"; };
+		04D7D0A7252E27AB000242FB /* Bite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bite.hpp; sourceTree = "<group>"; };
+		04E46DD725309096009461C4 /* Mediator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mediator.hpp; sourceTree = "<group>"; };
+		04E46DD92530910C009461C4 /* InfectMediator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InfectMediator.cpp; sourceTree = "<group>"; };
+		04E46DDA2530910C009461C4 /* InfectMediator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InfectMediator.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0459FDA4252A73000008CE25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047100F42531DC89009422FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040B8B77252CDE5C005A887B /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				0459FDB2252A73490008CE25 /* Unit.hpp */,
+				0459FDB1252A73490008CE25 /* Unit.cpp */,
+				040B8B94252D0592005A887B /* Soldier.cpp */,
+				040B8B95252D0592005A887B /* Soldier.hpp */,
+				040B8B9A252D0F49005A887B /* Rogue.cpp */,
+				040B8B9B252D0F49005A887B /* Rogue.hpp */,
+				04D7D0A0252E24E3000242FB /* Berserker.cpp */,
+				04D7D0A1252E24E3000242FB /* Berserker.hpp */,
+				04D7D0A3252E26F8000242FB /* Vampire.cpp */,
+				04D7D0A4252E26F8000242FB /* Vampire.hpp */,
+				0479702B252F9B2B00FE6A99 /* Werewolf.cpp */,
+				0479702C252F9B2B00FE6A99 /* Werewolf.hpp */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		040B8B78252CDEE5005A887B /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				04B06241252DD0A600E1649B /* Exceptions.hpp */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		040B8B79252CE311005A887B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				040B8B7A252CE345005A887B /* State.h */,
+				040B8B7B252CE39E005A887B /* State.cpp */,
+				04797028252F982F00FE6A99 /* InfectedState.cpp */,
+				04797029252F982F00FE6A99 /* InfectedState.hpp */,
+				04797031252F9DC500FE6A99 /* WolfState.cpp */,
+				04797032252F9DC500FE6A99 /* WolfState.hpp */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		040B8B81252CE828005A887B /* SpellCaster */ = {
+			isa = PBXGroup;
+			children = (
+				040B8B82252CE839005A887B /* SpellCaster.cpp */,
+				040B8B83252CE839005A887B /* SpellCaster.hpp */,
+			);
+			path = SpellCaster;
+			sourceTree = "<group>";
+		};
+		040B8B85252CF416005A887B /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				040B8B86252CF448005A887B /* Spell.cpp */,
+				040B8B87252CF448005A887B /* Spell.hpp */,
+			);
+			path = Spell;
+			sourceTree = "<group>";
+		};
+		040B8B89252CF51B005A887B /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				040B8B8B252CF536005A887B /* Weapon.cpp */,
+				040B8B8C252CF536005A887B /* Weapon.hpp */,
+				040B8B8E252CFF9C005A887B /* Axe.cpp */,
+				040B8B8F252CFF9C005A887B /* Axe.hpp */,
+				040B8B97252D0973005A887B /* Sword.cpp */,
+				040B8B98252D0973005A887B /* Sword.hpp */,
+				04B0623D252DC87F00E1649B /* Dagger.cpp */,
+				04B0623E252DC87F00E1649B /* Dagger.hpp */,
+				04D7D0A6252E27AB000242FB /* Bite.cpp */,
+				04D7D0A7252E27AB000242FB /* Bite.hpp */,
+				0479702E252F9BD500FE6A99 /* WerewolfWeapon.cpp */,
+				0479702F252F9BD500FE6A99 /* WerewolfWeapon.hpp */,
+			);
+			path = Weapon;
+			sourceTree = "<group>";
+		};
+		0459FD9E252A73000008CE25 = {
+			isa = PBXGroup;
+			children = (
+				0459FDA9252A73000008CE25 /* Army */,
+				047100F82531DC89009422FD /* SoldierTest */,
+				0459FDA8252A73000008CE25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0459FDA8252A73000008CE25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0459FDA7252A73000008CE25 /* Army */,
+				047100F72531DC89009422FD /* SoldierTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0459FDA9252A73000008CE25 /* Army */ = {
+			isa = PBXGroup;
+			children = (
+				04BC085F2531E66D003B6953 /* Tests */,
+				04E46DD52530907F009461C4 /* Mediator */,
+				040B8B89252CF51B005A887B /* Weapon */,
+				040B8B85252CF416005A887B /* Spell */,
+				040B8B81252CE828005A887B /* SpellCaster */,
+				040B8B79252CE311005A887B /* State */,
+				040B8B78252CDEE5005A887B /* Exceptions */,
+				040B8B77252CDE5C005A887B /* Unit */,
+				0459FDAA252A73000008CE25 /* main.cpp */,
+			);
+			path = Army;
+			sourceTree = "<group>";
+		};
+		047100F82531DC89009422FD /* SoldierTest */ = {
+			isa = PBXGroup;
+			children = (
+				047100F92531DC89009422FD /* SoldierTest.swift */,
+				047100FB2531DC89009422FD /* Info.plist */,
+			);
+			path = SoldierTest;
+			sourceTree = "<group>";
+		};
+		04BC085F2531E66D003B6953 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				04BC08622531E759003B6953 /* catch.hpp */,
+				04BC08602531E736003B6953 /* RogueTest.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		04E46DD52530907F009461C4 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				04E46DD725309096009461C4 /* Mediator.hpp */,
+				04E46DD92530910C009461C4 /* InfectMediator.cpp */,
+				04E46DDA2530910C009461C4 /* InfectMediator.hpp */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0459FDA6252A73000008CE25 /* Army */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0459FDAE252A73000008CE25 /* Build configuration list for PBXNativeTarget "Army" */;
+			buildPhases = (
+				0459FDA3252A73000008CE25 /* Sources */,
+				0459FDA4252A73000008CE25 /* Frameworks */,
+				0459FDA5252A73000008CE25 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Army;
+			productName = Army;
+			productReference = 0459FDA7252A73000008CE25 /* Army */;
+			productType = "com.apple.product-type.tool";
+		};
+		047100F62531DC89009422FD /* SoldierTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047100FE2531DC89009422FD /* Build configuration list for PBXNativeTarget "SoldierTest" */;
+			buildPhases = (
+				047100F32531DC89009422FD /* Sources */,
+				047100F42531DC89009422FD /* Frameworks */,
+				047100F52531DC89009422FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoldierTest;
+			productName = SoldierTest;
+			productReference = 047100F72531DC89009422FD /* SoldierTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0459FD9F252A73000008CE25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					0459FDA6252A73000008CE25 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					047100F62531DC89009422FD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0459FDA2252A73000008CE25 /* Build configuration list for PBXProject "Army" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0459FD9E252A73000008CE25;
+			productRefGroup = 0459FDA8252A73000008CE25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0459FDA6252A73000008CE25 /* Army */,
+				047100F62531DC89009422FD /* SoldierTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047100F52531DC89009422FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0459FDA3252A73000008CE25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040B8B9C252D0F49005A887B /* Rogue.cpp in Sources */,
+				0459FDAB252A73000008CE25 /* main.cpp in Sources */,
+				04797030252F9BD500FE6A99 /* WerewolfWeapon.cpp in Sources */,
+				04E46DDB2530910C009461C4 /* InfectMediator.cpp in Sources */,
+				0459FDB3252A73490008CE25 /* Unit.cpp in Sources */,
+				040B8B88252CF448005A887B /* Spell.cpp in Sources */,
+				040B8B84252CE839005A887B /* SpellCaster.cpp in Sources */,
+				040B8B8D252CF536005A887B /* Weapon.cpp in Sources */,
+				04797033252F9DC500FE6A99 /* WolfState.cpp in Sources */,
+				040B8B90252CFF9C005A887B /* Axe.cpp in Sources */,
+				0479702A252F982F00FE6A99 /* InfectedState.cpp in Sources */,
+				0479702D252F9B2B00FE6A99 /* Werewolf.cpp in Sources */,
+				04D7D0A8252E27AB000242FB /* Bite.cpp in Sources */,
+				04D7D0A2252E24E3000242FB /* Berserker.cpp in Sources */,
+				040B8B96252D0592005A887B /* Soldier.cpp in Sources */,
+				04B0623F252DC87F00E1649B /* Dagger.cpp in Sources */,
+				04BC08612531E736003B6953 /* RogueTest.cpp in Sources */,
+				04D7D0A5252E26F8000242FB /* Vampire.cpp in Sources */,
+				040B8B7C252CE39E005A887B /* State.cpp in Sources */,
+				040B8B99252D0973005A887B /* Sword.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047100F32531DC89009422FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047100FA2531DC89009422FD /* SoldierTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0459FDAC252A73000008CE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0459FDAD252A73000008CE25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0459FDAF252A73000008CE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BTM82KAJ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0459FDB0252A73000008CE25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BTM82KAJ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		047100FC2531DC89009422FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9BTM82KAJ4;
+				INFOPLIST_FILE = SoldierTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhoglikk.SoldierTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		047100FD2531DC89009422FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9BTM82KAJ4;
+				INFOPLIST_FILE = SoldierTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhoglikk.SoldierTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0459FDA2252A73000008CE25 /* Build configuration list for PBXProject "Army" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0459FDAC252A73000008CE25 /* Debug */,
+				0459FDAD252A73000008CE25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0459FDAE252A73000008CE25 /* Build configuration list for PBXNativeTarget "Army" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0459FDAF252A73000008CE25 /* Debug */,
+				0459FDB0252A73000008CE25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047100FE2531DC89009422FD /* Build configuration list for PBXNativeTarget "SoldierTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047100FC2531DC89009422FD /* Debug */,
+				047100FD2531DC89009422FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0459FD9F252A73000008CE25 /* Project object */;
+}

@@ -6,6 +6,8 @@
 #include "Unit.hpp"
 #include "../Weapon/Bite.hpp"
 
+#include "InfectMediator.hpp"
+
 class Vampire : public Unit{
 public:
     Vampire(const std::string& name = "Vampire", int hp = 150, int dmg = 10);
