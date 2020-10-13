@@ -1,8 +1,6 @@
 #ifndef Axe_hpp
 #define Axe_hpp
 
-#include <iostream>
-
 #include "Weapon.hpp"
 
 class Axe : public Weapon {

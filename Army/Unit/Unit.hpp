@@ -10,7 +10,6 @@
 
 class Mediator;
 class Weapon;
-class Spell;
 
 class Unit {
 protected:

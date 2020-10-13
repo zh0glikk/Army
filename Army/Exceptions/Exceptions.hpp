@@ -4,5 +4,6 @@
 class UnitIsDead {};
 class CantUseIt  {};
 class LowMana {};
+class CantBeInfected {};
 
 #endif /* Exceptions_h */

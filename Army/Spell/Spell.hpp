@@ -1,8 +1,6 @@
 #ifndef Spell_hpp
 #define Spell_hpp
 
-#include <iostream>
-//#include "../Unit/Unit.hpp"
 #include "../SpellCaster/SpellCaster.hpp"
 
 class SpellCaster;
@@ -12,12 +10,12 @@ protected:
     SpellCaster* owner;
     int manaCost;
 public:
-    Spell(SpellCaster* owner, int manaCost);
-    ~Spell();
-  
-    virtual void cast(Unit* enemy);
+    Spell(SpellCaster* owner, int manaCost = 10);
+    virtual ~Spell();
+    
+    virtual void cast(Unit* target);
+    
     int getManaCost();
 };
-
 
 #endif /* Spell_hpp */

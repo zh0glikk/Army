@@ -14,14 +14,14 @@ void InfectMediator::notify(Unit* victim, std::string event) const {
         if (!dynamic_cast<Werewolf*>(victim)) {
             victim->changeWeapon(new Bite(victim));
         } else {
-            std::cout << "Can't be infected" << std::endl;
+            throw CantBeInfected();
         }
         
     } else if ( event == "Werewolf Infect" ) {
         if (!dynamic_cast<Vampire*>(victim)) {
             victim->changeWeapon(new WerewolfWeapon(victim));
         } else {
-            std::cout << "Can't be infected" << std::endl;
+            throw CantBeInfected();
         }
     }
 }

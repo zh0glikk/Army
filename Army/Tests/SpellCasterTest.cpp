@@ -1,36 +1,43 @@
 #include "../Unit/Soldier.hpp"
-#include "../SpellCaster/SpellCaster.hpp"
-#include "../Spell/Spell.hpp"
+#include "../SpellCaster/Wizard.hpp"
 #include "../Unit/Werewolf.hpp"
 #include "../Unit/Berserker.hpp"
 
+#include "../Spell/Heal.hpp"
+
 #include "catch.hpp"
 
-TEST_CASE("Spell Caster", "[SC vs Soldier]") {
-    SpellCaster* sc = new SpellCaster("SpellCaster", 100, 10, 100, 20);
+TEST_CASE("Spell Caster", "[wz vs Soldier]") {
+    Wizard* wz = new Wizard("Wizard", 100, 10, 100, 20);
     Soldier* sld = new Soldier("Soldier", 100, 10);
     Werewolf* wf = new Werewolf("Werewolf", 100, 10);
     Berserker* bs = new Berserker("Berserker", 100, 10);
     
     
     
+    SECTION("Constructor") {
+        REQUIRE(wz->getHealingMultiplier() == 0.5);
+        REQUIRE(wz->getDmgMuliplier() == 1);
+    }
+    
     SECTION("Test Spell Caster cast") {
-        sc->cast(sld);
+        wz->cast(sld);
 
-        REQUIRE(sc->getHitPoints() == 100);
+        REQUIRE(wz->getHitPoints() == 100);
         REQUIRE(sld->getHitPoints() == 80);
-        REQUIRE(sc->getMana() == 90);
+        REQUIRE(wz->getMana() == 90);
 
     }
     
-    SECTION("Test soldier attack") {
-        sc->attack(sld);
+    SECTION("Test wz attack") {
+        wz->attack(sld);
             
-        REQUIRE(sc->getHitPoints() == 95);
+        REQUIRE(wz->getHitPoints() == 95);
         REQUIRE(sld->getHitPoints() == 90);
     }
+    
     SECTION("Test Spell caster -> wolf") {
-        sc->cast(wf);
+        wz->cast(wf);
         
         REQUIRE(wf->getHitPoints() == 80);
         
@@ -38,26 +45,37 @@ TEST_CASE("Spell Caster", "[SC vs Soldier]") {
         
         REQUIRE(wf->getHitPoints() == 200);
         
-        sc->cast(wf);
+        wz->cast(wf);
         
         REQUIRE(wf->getHitPoints() == 160);
     }
     SECTION("Berserker taking magic dmg") {
-        sc->cast(bs);
+        wz->cast(bs);
         
         REQUIRE(bs->getHitPoints() == 100);
     }
     
     SECTION("Healing check") {
-        sc->cast(sld);
-        
+        wz->cast(sld);
+
         REQUIRE(sld->getHitPoints() == 80);
         
-        sc->heal(sld);
+        wz->changeSpell(new Heal(wz));
+        wz->cast(sld);
         
-        REQUIRE(sld->getHitPoints() == 100);
-        REQUIRE(sc->getMana() == 70);
         
+        REQUIRE(sld->getHitPoints() == 90);
+    }
+    
+    SECTION("Frost Ball check") {
+        sld->attack(wz);
+        
+        REQUIRE(wz->getHitPoints() == 90);
+        
+        wz->changeSpell(new FrostBall(wz));
+        wz->cast(sld);
+        
+        REQUIRE(wz->getHitPoints() == 92);
     }
     
 }

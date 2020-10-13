@@ -6,11 +6,11 @@ Spell::Spell(SpellCaster* owner, int manaCost) {
 }
 
 Spell::~Spell() {
-    delete this->owner;
+//    delete this->owner;
 }
 
-void Spell::cast(Unit* enemy) {
-    enemy->takeMagicDamage(owner->getMagicDamage());
+void Spell::cast(Unit* target) {
+    target->takeMagicDamage(owner->getMagicPower() * owner->getDmgMuliplier());
 }
 
 int Spell::getManaCost() {

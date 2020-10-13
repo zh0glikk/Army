@@ -1,54 +1,45 @@
 #include "SpellCaster.hpp"
 
-SpellCaster::SpellCaster(const std::string& name, int hp, int dmg, int manaLimit, int magicDamage) : Unit(name, hp, dmg) {
-    this->manaLimit = manaLimit;
-    this->mana = manaLimit;
-    this->magicDamage = magicDamage;
+SpellCaster::SpellCaster(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult, double healMult) : Unit(name, hp, dmg) {
+    this->magicState = new MagicState(manaLimit, magicPower, dmgMult, healMult);
     this->weapon = new SpellCasterWeapon(this);
-    this->attackSpell = new Spell(this, 10);
-    this->healingSpell = new Spell(this, 20);
 }
 
 SpellCaster::~SpellCaster() {
-    
-}
-
-void SpellCaster::ensureCanCast() {
-    if ( mana <= 0 ) {
-        mana = 0;
-        throw LowMana();
-    }
+    delete this->spell;
+    delete this->magicState;
 }
 
 int SpellCaster::getMana() {
-    return this->mana;
+    return this->magicState->getMana();
 }
 
 int SpellCaster::getManaLimit() {
-    return this->manaLimit;
+    return this->magicState->getManaLimit();
 }
 
-int SpellCaster::getMagicDamage() {
-    return this->magicDamage;
+int SpellCaster::getMagicPower() {
+    return this->magicState->getMagicPower();
 }
 
-void SpellCaster::cast(Unit* enemy) {
-    this->mana -= this->attackSpell->getManaCost();
-    ensureCanCast();
+void SpellCaster::cast(Unit* target) {
+    int tmp = this->getMana() - this->spell->getManaCost();
     
-    this->attackSpell->cast(enemy);
+    if ( tmp > 0 ) {
+        this->magicState->setMana(tmp);
+        this->spell->cast(target);
+    }
 }
-
-void SpellCaster::heal(Unit* target) {
-    this->mana -= this->healingSpell->getManaCost();
-    ensureCanCast();
-    
-    target->addHp(this->magicDamage);
-}
-
 
 void SpellCaster::changeSpell(Spell* newSpell) {
-    delete this->attackSpell;
-    this->attackSpell = newSpell;
+    delete this->spell;
+    this->spell = newSpell;
 }
 
+double SpellCaster::getHealingMultiplier() {
+    return this->magicState->getHealingMultiplier();
+}
+
+double SpellCaster::getDmgMuliplier() {
+    return this->magicState->getDmgMultiplier();
+}

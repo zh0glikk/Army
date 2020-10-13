@@ -15,6 +15,7 @@ public:
     ~Werewolf();
     
     void changeState();
+    void infect(Unit* other);
 };
 
 #endif /* Werewolf_hpp */
