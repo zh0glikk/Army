@@ -2,6 +2,7 @@
 #include "../SpellCaster/Wizard.hpp"
 #include "../Unit/Werewolf.hpp"
 #include "../Unit/Berserker.hpp"
+#include "../SpellCaster/Healer.hpp"
 
 #include "../Spell/Heal.hpp"
 
@@ -9,6 +10,7 @@
 
 TEST_CASE("Spell Caster", "[wz vs Soldier]") {
     Wizard* wz = new Wizard("Wizard", 100, 10, 100, 20);
+    Healer* hl = new Healer("Healer", 100, 10, 100, 20);
     Soldier* sld = new Soldier("Soldier", 100, 10);
     Werewolf* wf = new Werewolf("Werewolf", 100, 10);
     Berserker* bs = new Berserker("Berserker", 100, 10);
@@ -74,6 +76,26 @@ TEST_CASE("Spell Caster", "[wz vs Soldier]") {
         
         wz->changeSpell(new FrostBall(wz));
         wz->cast(sld);
+        
+        REQUIRE(wz->getHitPoints() == 92);
+    }
+    SECTION("check healer") {
+        wz->cast(wz);
+        
+        REQUIRE(wz->getHitPoints() == 80);
+        
+        hl->cast(wz);
+        
+        REQUIRE(wz->getHitPoints() == 100);
+    }
+    SECTION("check change spell") {
+        wz->changeSpell("FrostBall");
+        
+        wz->cast(wz);
+        REQUIRE(wz->getHitPoints() == 82);
+        
+        wz->changeSpell("Heal");
+        wz->cast(wz);
         
         REQUIRE(wz->getHitPoints() == 92);
     }

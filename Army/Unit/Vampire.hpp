@@ -8,7 +8,9 @@
 
 #include "../Mediator/InfectMediator.hpp"
 
-class Vampire : public Unit{
+#include "../Race/Undead.hpp"
+
+class Vampire : public Unit, Undead{
 public:
     Vampire(const std::string& name = "Vampire", int hp = 150, int dmg = 10);
     ~Vampire();

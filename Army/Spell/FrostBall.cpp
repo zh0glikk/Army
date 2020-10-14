@@ -6,7 +6,7 @@ FrostBall::~FrostBall() {
     
 }
 
-void FrostBall::cast(Unit* target) {
-    Spell::cast(target);
+void FrostBall::cast(Unit* target, double otherMultiplier) {
+    Spell::cast(target, otherMultiplier);
     this->owner->addHp(this->owner->getMagicPower()/10);
 }

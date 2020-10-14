@@ -4,7 +4,7 @@
 #include <map>
 
 #include "../SpellCaster/SpellCaster.hpp"
-//#include "../Spell/Spell.hpp"
+#include "../Spell/Spell.hpp"
 
 #include "../Spell/FireBall.hpp"
 #include "../Spell/FrostBall.hpp"

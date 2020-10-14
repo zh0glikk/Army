@@ -22,18 +22,22 @@ int SpellCaster::getMagicPower() {
     return this->magicState->getMagicPower();
 }
 
-void SpellCaster::cast(Unit* target) {
+void SpellCaster::cast(Unit* target, double otherMultiplier) {
     int tmp = this->getMana() - this->spell->getManaCost();
     
     if ( tmp > 0 ) {
         this->magicState->setMana(tmp);
-        this->spell->cast(target);
+        this->spell->cast(target, otherMultiplier);
     }
 }
 
 void SpellCaster::changeSpell(Spell* newSpell) {
     delete this->spell;
     this->spell = newSpell;
+}
+
+void SpellCaster::changeSpell(std::string spellName) {
+    this->spell = this->spellBook.find(spellName)->second;
 }
 
 double SpellCaster::getHealingMultiplier() {

@@ -5,10 +5,10 @@
 
 class Heal : public Spell {
 public:
-    Heal(SpellCaster* owner, int manaCost = 10);
+    Heal(SpellCaster* owner, int manaCost = 20);
     ~Heal();
     
-    void cast(Unit* target);
+    void cast(Unit* target, double otherMultipler = 1);
 };
 
 #endif /* Heal_hpp */

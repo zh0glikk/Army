@@ -8,7 +8,7 @@ public:
     FireBall(SpellCaster* owner, int manaCost = 10);
     ~FireBall();
     
-    void cast(Unit* target);
+    void cast(Unit* target, double otherMuliplier = 1);
 };
 
 #endif /* FIreBall_hpp */

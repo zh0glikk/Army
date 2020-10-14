@@ -6,6 +6,6 @@ Heal::~Heal() {
     
 }
 
-void Heal::cast(Unit* target) {
-    target->addHp(this->owner->getMagicPower() * this->owner->getHealingMultiplier());
+void Heal::cast(Unit* target, double otherMultiplier) {
+    target->addHp(this->owner->getMagicPower() * this->owner->getHealingMultiplier() * otherMultiplier);
 }

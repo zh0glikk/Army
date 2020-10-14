@@ -9,11 +9,12 @@ class Spell {
 protected:
     SpellCaster* owner;
     int manaCost;
+//    bool isAttackSpell = true;
 public:
-    Spell(SpellCaster* owner, int manaCost = 10);
+    Spell(SpellCaster* owner ,int manaCost = 10);
     virtual ~Spell();
     
-    virtual void cast(Unit* target);
+    virtual void cast(Unit* target, double otherMultipler = 1);
     
     int getManaCost();
 };

@@ -3,22 +3,20 @@
 
 #include <iostream>
 
+#include <map>
+
 #include "../State/MagicState.hpp"
 #include "../Unit/Unit.hpp"
 #include "../Spell/Spell.hpp"
 #include "../Weapon/SpellCasterWeapon.hpp"
-//#include "../SpellBook/SpellBook.hpp"
-//#include "../Spell/FireBall.hpp"
-
 
 class Spell;
-//class SpellBook;
 
 class SpellCaster : public Unit {
 protected:
     MagicState* magicState;
     Spell* spell;
-//    SpellBook* spellBook;
+    std::map<std::string, Spell*> spellBook;
 public:
     SpellCaster(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 1, double healMult = 1);
     ~SpellCaster();
@@ -27,14 +25,13 @@ public:
     int getManaLimit();
     int getMagicPower();
     
-    void cast(Unit* target);
+    virtual void cast(Unit* target, double otherMultiplier = 1);
         
     void changeSpell(Spell* newSpell);
+    void changeSpell(std::string spellName);
     
     double getDmgMuliplier();
     double getHealingMultiplier();
 };
-
-
 
 #endif /* SpellCaster_hpp */
