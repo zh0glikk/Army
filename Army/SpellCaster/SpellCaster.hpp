@@ -16,7 +16,7 @@ class SpellCaster : public Unit {
 protected:
     MagicState* magicState;
     Spell* spell;
-    std::map<std::string, Spell*> spellBook;
+    std::map<std::string, std::shared_ptr<Spell>> spellBook;
 public:
     SpellCaster(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 1, double healMult = 1);
     virtual ~SpellCaster();

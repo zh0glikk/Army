@@ -13,6 +13,4 @@ public:
     
 };
 
-
-
 #endif /* Soldier_hpp */

@@ -5,11 +5,8 @@
 TEST_CASE("Unit Is Dead", "[UnitIsDead]") {
     Rogue* r1 = new Rogue("Rogue1", 100, 10);
     Necromancer* nm = new Necromancer("Necromancer", 100, 10, 100, 20);
-//    Rogue* r2 = new Rogue("Rogue2", 100, 10);
     
-    
-    
-    SECTION("r1->r2") {
+    SECTION("necromanser healing test") {
         for ( int i = 0; i < 9; i++ ) {
             nm->attack(r1);
         }

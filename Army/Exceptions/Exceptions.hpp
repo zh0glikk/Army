@@ -3,7 +3,6 @@
 
 class UnitIsDead {};
 class CantAttack {};
-//class CantUseIt  {};
 class LowMana {};
 class CantBeInfected {};
 

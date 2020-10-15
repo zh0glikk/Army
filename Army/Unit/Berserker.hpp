@@ -14,6 +14,4 @@ public:
     void takeMagicDamage(int dmg);
 };
 
-
-
 #endif /* Berserker_hpp */

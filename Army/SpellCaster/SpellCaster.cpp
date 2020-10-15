@@ -9,7 +9,7 @@ SpellCaster::~SpellCaster() {
     delete this->spell;
     delete this->magicState;
     
-    std::map<std::string, Spell*>::iterator it = this->spellBook.begin();
+    std::map<std::string, std::shared_ptr<Spell>>::iterator it = this->spellBook.begin();
 
     for (; it != this->spellBook.end(); it++ ) {
         this->spellBook.erase(it);
@@ -52,7 +52,10 @@ void SpellCaster::changeSpell(Spell* newSpell) {
 }
 
 void SpellCaster::changeSpell(std::string spellName) {
-    this->spell = this->spellBook.find(spellName)->second;
+    auto it = this->spellBook.find(spellName);
+    if (it != this->spellBook.end()) {
+        this->spell = it->second.get();
+    }
 }
 
 double SpellCaster::getHealingMultiplier() {

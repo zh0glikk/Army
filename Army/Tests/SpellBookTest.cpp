@@ -1,6 +1,5 @@
 #include "catch.hpp"
 #include "../SpellCaster/Wizard.hpp"
-#include "../SpellBook/SpellBook.hpp"
 #include "../SpellCaster/Healer.hpp"
 #include "../SpellCaster/Priest.hpp"
 #include "../SpellCaster/Warlock.hpp"
