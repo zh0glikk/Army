@@ -12,7 +12,7 @@ private:
     bool isWolf = false;
 public:
     Werewolf(const std::string& name = "Werewolf", int hp = 130, int dmg = 25);
-    ~Werewolf();
+    virtual ~Werewolf();
     
     void changeState();
     void infect(Unit* other);

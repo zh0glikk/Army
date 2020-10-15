@@ -2,8 +2,10 @@
 #define Exceptions_h
 
 class UnitIsDead {};
-class CantUseIt  {};
+class CantAttack {};
+//class CantUseIt  {};
 class LowMana {};
 class CantBeInfected {};
+
 
 #endif /* Exceptions_h */

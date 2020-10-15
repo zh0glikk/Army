@@ -5,7 +5,7 @@
 
 class GreatHeal : public Spell {
 public:
-    GreatHeal(SpellCaster* owner, int manaCost = 30);
+    GreatHeal(SpellCaster* owner, int manaCost = 30, int spellType = 0);
     ~GreatHeal();
     
     void cast(Unit* target, double otherMultipler = 1);

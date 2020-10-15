@@ -5,7 +5,7 @@
 
 class Heal : public Spell {
 public:
-    Heal(SpellCaster* owner, int manaCost = 20);
+    Heal(SpellCaster* owner, int manaCost = 20, int spellType = 0);
     ~Heal();
     
     void cast(Unit* target, double otherMultipler = 1);

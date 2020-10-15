@@ -8,6 +8,12 @@ SpellCaster::SpellCaster(const std::string& name, int hp, int dmg, int manaLimit
 SpellCaster::~SpellCaster() {
     delete this->spell;
     delete this->magicState;
+    
+    std::map<std::string, Spell*>::iterator it = this->spellBook.begin();
+
+    for (; it != this->spellBook.end(); it++ ) {
+        this->spellBook.erase(it);
+    }
 }
 
 int SpellCaster::getMana() {
@@ -26,8 +32,17 @@ void SpellCaster::cast(Unit* target, double otherMultiplier) {
     int tmp = this->getMana() - this->spell->getManaCost();
     
     if ( tmp > 0 ) {
+        
+        try {
+            this->spell->cast(target, otherMultiplier);
+        } catch(UnitIsDead e) {
+            target->notifyAboutDeath();
+            target->changeState(new DeadState(this->getName()));
+        } catch(CantAttack e) {
+            tmp = this->getMana();
+            // some code when u r attacking dead unit
+        }
         this->magicState->setMana(tmp);
-        this->spell->cast(target, otherMultiplier);
     }
 }
 

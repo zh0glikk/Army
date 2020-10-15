@@ -5,7 +5,7 @@
 
 class FireBall : public Spell {
 public:
-    FireBall(SpellCaster* owner, int manaCost = 10);
+    FireBall(SpellCaster* owner, int manaCost = 10, int spellType = 1);
     ~FireBall();
     
     void cast(Unit* target, double otherMuliplier = 1);

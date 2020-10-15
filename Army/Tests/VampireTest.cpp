@@ -26,7 +26,7 @@ TEST_CASE("vampire vs soldier", "[Vampire]") {
         try {
             wf->infect(vmp);
         } catch (CantBeInfected e) {
-            std::cout << "CantBeInfected exeption" << std::endl;
+
         }
         
     }

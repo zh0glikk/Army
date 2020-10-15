@@ -19,7 +19,7 @@ protected:
     std::map<std::string, Spell*> spellBook;
 public:
     SpellCaster(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 1, double healMult = 1);
-    ~SpellCaster();
+    virtual ~SpellCaster();
     
     int getMana();
     int getManaLimit();

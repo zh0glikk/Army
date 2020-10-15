@@ -11,7 +11,7 @@
 class Healer : public SpellCaster {
 public:
     Healer(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 0.5, double healMult = 1);
-    ~Healer();
+    virtual ~Healer();
 };
 
 #endif /* Healer_hpp */

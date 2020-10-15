@@ -8,13 +8,11 @@
 #include "../Spell/FrostBall.hpp"
 #include "../Spell/GreatHeal.hpp"
 
-#include "../Race/Undead.hpp"
-#include "../Unit/Vampire.hpp"
 
 class Priest : public SpellCaster {
 public:
     Priest(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 0.5, double healMult = 1);
-    ~Priest();
+    virtual ~Priest();
     
     void cast(Unit* target);
 };

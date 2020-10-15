@@ -1,6 +1,6 @@
 #include "FrostBall.hpp"
 
-FrostBall::FrostBall(SpellCaster* owner, int manaCost) : Spell(owner, manaCost) {}
+FrostBall::FrostBall(SpellCaster* owner, int manaCost, int spellType) : Spell(owner, manaCost, spellType) {}
 
 FrostBall::~FrostBall() {
     

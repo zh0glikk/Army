@@ -8,6 +8,8 @@ TEST_CASE("Unit Testing", "[Unit]") {
     
     SECTION( "Rogue: test constructor" ) {
         REQUIRE(u->getHitPointsLimit() == 100);
+        REQUIRE(u->getDamage() == 10);
+        REQUIRE(u->getHitPoints() == 100);
     }
     
 }

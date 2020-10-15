@@ -1,7 +1,8 @@
 #include "Spell.hpp"
 
-Spell::Spell(SpellCaster* owner, int manaCost) {
+Spell::Spell(SpellCaster* owner, int manaCost, int spellType) {
     this->owner = owner;
+    this->spellType = spellType;
     this->manaCost = manaCost;
 }
 
@@ -15,4 +16,8 @@ void Spell::cast(Unit* target, double otherMultiplier) {
 
 int Spell::getManaCost() {
     return this->manaCost;
+}
+
+int Spell::getSpellType() {
+    return this->spellType;
 }

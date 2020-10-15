@@ -11,7 +11,7 @@
 class Wizard : public SpellCaster {
 public:
     Wizard(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 1, double healMult = 0.5);
-    ~Wizard();
+    virtual ~Wizard();
 };
 
 #endif /* Wizard_hpp */

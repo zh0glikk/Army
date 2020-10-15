@@ -15,8 +15,12 @@ Priest::~Priest() {
 }
 
 void Priest::cast(Unit* target) {
-    if (dynamic_cast<Vampire*>(target)) {
-        SpellCaster::cast(target, 2);
+    if (target->getRace() == Undead) {
+        if ( this->spell->getSpellType() == 1 ) {
+            SpellCaster::cast(target, 2);
+        } else {
+            SpellCaster::cast(target);
+        }
     } else {
         SpellCaster::cast(target);
     }

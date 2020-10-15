@@ -15,6 +15,8 @@
 		040B8B96252D0592005A887B /* Soldier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B94252D0592005A887B /* Soldier.cpp */; };
 		040B8B99252D0973005A887B /* Sword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B97252D0973005A887B /* Sword.cpp */; };
 		040B8B9C252D0F49005A887B /* Rogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B8B9A252D0F49005A887B /* Rogue.cpp */; };
+		042C424A2535ADEB00D63384 /* SpellBookTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042C42492535ADEB00D63384 /* SpellBookTest.cpp */; };
+		042C424D2535B03500D63384 /* SpellBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042C424B2535B03500D63384 /* SpellBook.cpp */; };
 		0459FDAB252A73000008CE25 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0459FDAA252A73000008CE25 /* main.cpp */; };
 		0459FDB3252A73490008CE25 /* Unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0459FDB1252A73490008CE25 /* Unit.cpp */; };
 		047100FA2531DC89009422FD /* SoldierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047100F92531DC89009422FD /* SoldierTest.swift */; };
@@ -22,12 +24,31 @@
 		0479702D252F9B2B00FE6A99 /* Werewolf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0479702B252F9B2B00FE6A99 /* Werewolf.cpp */; };
 		04797030252F9BD500FE6A99 /* WerewolfWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0479702E252F9BD500FE6A99 /* WerewolfWeapon.cpp */; };
 		04797033252F9DC500FE6A99 /* WolfState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04797031252F9DC500FE6A99 /* WolfState.cpp */; };
+		049F34362537726200C0BAE1 /* Warlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F34342537726200C0BAE1 /* Warlock.cpp */; };
+		049F343A2537736000C0BAE1 /* Demon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F34382537736000C0BAE1 /* Demon.cpp */; };
+		049F343D25377CDB00C0BAE1 /* Necromancer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F343B25377CDB00C0BAE1 /* Necromancer.cpp */; };
+		049F34412537844B00C0BAE1 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F343F2537844B00C0BAE1 /* Observer.cpp */; };
+		049F3444253785BC00C0BAE1 /* Observable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F3442253785BC00C0BAE1 /* Observable.cpp */; };
+		049F3446253790F500C0BAE1 /* UnitIsDeadTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F3445253790F500C0BAE1 /* UnitIsDeadTest.cpp */; };
+		049F34492537954B00C0BAE1 /* DeadState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049F34472537954B00C0BAE1 /* DeadState.cpp */; };
+		04A2F9AB2534B6F20063A31B /* MagicState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F9A92534B6F20063A31B /* MagicState.cpp */; };
+		04A2F9AD2534C9A30063A31B /* UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F9AC2534C9A30063A31B /* UnitTest.cpp */; };
+		04A2F9B02534CB110063A31B /* Wizard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F9AE2534CB110063A31B /* Wizard.cpp */; };
+		04A2F9B32534CCF40063A31B /* Heal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F9B12534CCF40063A31B /* Heal.cpp */; };
+		04A2F9B92534D4BB0063A31B /* FrostBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F9B72534D4BB0063A31B /* FrostBall.cpp */; };
+		04A2F9BC2534D51E0063A31B /* FireBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A2F9BB2534D51E0063A31B /* FireBall.cpp */; };
 		04B0623F252DC87F00E1649B /* Dagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04B0623D252DC87F00E1649B /* Dagger.cpp */; };
 		04BC08612531E736003B6953 /* RogueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04BC08602531E736003B6953 /* RogueTest.cpp */; };
 		04D7D0A2252E24E3000242FB /* Berserker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D7D0A0252E24E3000242FB /* Berserker.cpp */; };
 		04D7D0A5252E26F8000242FB /* Vampire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D7D0A3252E26F8000242FB /* Vampire.cpp */; };
 		04D7D0A8252E27AB000242FB /* Bite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D7D0A6252E27AB000242FB /* Bite.cpp */; };
+		04DD98682536F8C4006B3AE4 /* Healer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04DD98662536F8C4006B3AE4 /* Healer.cpp */; };
+		04DD986B2537082F006B3AE4 /* GreatHeal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04DD98692537082F006B3AE4 /* GreatHeal.cpp */; };
+		04DD987225370AD5006B3AE4 /* Priest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04DD987025370AD5006B3AE4 /* Priest.cpp */; };
 		04E46DDB2530910C009461C4 /* InfectMediator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E46DD92530910C009461C4 /* InfectMediator.cpp */; };
+		04F2A09925339F0D00D7D8FB /* SpellCasterTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A09725339F0C00D7D8FB /* SpellCasterTest.cpp */; };
+		04F2A09A25339F0D00D7D8FB /* VampireTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A09825339F0C00D7D8FB /* VampireTest.cpp */; };
+		04F2A09D2533A0C100D7D8FB /* SpellCasterWeapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F2A09C2533A0C100D7D8FB /* SpellCasterWeapon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +80,9 @@
 		040B8B98252D0973005A887B /* Sword.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Sword.hpp; sourceTree = "<group>"; };
 		040B8B9A252D0F49005A887B /* Rogue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rogue.cpp; sourceTree = "<group>"; };
 		040B8B9B252D0F49005A887B /* Rogue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rogue.hpp; sourceTree = "<group>"; };
+		042C42492535ADEB00D63384 /* SpellBookTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpellBookTest.cpp; sourceTree = "<group>"; };
+		042C424B2535B03500D63384 /* SpellBook.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpellBook.cpp; sourceTree = "<group>"; };
+		042C424C2535B03500D63384 /* SpellBook.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpellBook.hpp; sourceTree = "<group>"; };
 		0459FDA7252A73000008CE25 /* Army */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Army; sourceTree = BUILT_PRODUCTS_DIR; };
 		0459FDAA252A73000008CE25 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0459FDB1252A73490008CE25 /* Unit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Unit.cpp; sourceTree = "<group>"; };
@@ -74,6 +98,31 @@
 		0479702F252F9BD500FE6A99 /* WerewolfWeapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WerewolfWeapon.hpp; sourceTree = "<group>"; };
 		04797031252F9DC500FE6A99 /* WolfState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WolfState.cpp; sourceTree = "<group>"; };
 		04797032252F9DC500FE6A99 /* WolfState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WolfState.hpp; sourceTree = "<group>"; };
+		049F343325376E6700C0BAE1 /* Races.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Races.hpp; sourceTree = "<group>"; };
+		049F34342537726200C0BAE1 /* Warlock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Warlock.cpp; sourceTree = "<group>"; };
+		049F34352537726200C0BAE1 /* Warlock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Warlock.hpp; sourceTree = "<group>"; };
+		049F34382537736000C0BAE1 /* Demon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Demon.cpp; sourceTree = "<group>"; };
+		049F34392537736000C0BAE1 /* Demon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Demon.hpp; sourceTree = "<group>"; };
+		049F343B25377CDB00C0BAE1 /* Necromancer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Necromancer.cpp; sourceTree = "<group>"; };
+		049F343C25377CDB00C0BAE1 /* Necromancer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Necromancer.hpp; sourceTree = "<group>"; };
+		049F343F2537844B00C0BAE1 /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		049F34402537844B00C0BAE1 /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
+		049F3442253785BC00C0BAE1 /* Observable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observable.cpp; sourceTree = "<group>"; };
+		049F3443253785BC00C0BAE1 /* Observable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observable.hpp; sourceTree = "<group>"; };
+		049F3445253790F500C0BAE1 /* UnitIsDeadTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnitIsDeadTest.cpp; sourceTree = "<group>"; };
+		049F34472537954B00C0BAE1 /* DeadState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DeadState.cpp; sourceTree = "<group>"; };
+		049F34482537954B00C0BAE1 /* DeadState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DeadState.hpp; sourceTree = "<group>"; };
+		04A2F9A92534B6F20063A31B /* MagicState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MagicState.cpp; sourceTree = "<group>"; };
+		04A2F9AA2534B6F20063A31B /* MagicState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MagicState.hpp; sourceTree = "<group>"; };
+		04A2F9AC2534C9A30063A31B /* UnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnitTest.cpp; sourceTree = "<group>"; };
+		04A2F9AE2534CB110063A31B /* Wizard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Wizard.cpp; sourceTree = "<group>"; };
+		04A2F9AF2534CB110063A31B /* Wizard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Wizard.hpp; sourceTree = "<group>"; };
+		04A2F9B12534CCF40063A31B /* Heal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Heal.cpp; sourceTree = "<group>"; };
+		04A2F9B22534CCF40063A31B /* Heal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Heal.hpp; sourceTree = "<group>"; };
+		04A2F9B72534D4BB0063A31B /* FrostBall.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FrostBall.cpp; sourceTree = "<group>"; };
+		04A2F9B82534D4BB0063A31B /* FrostBall.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FrostBall.hpp; sourceTree = "<group>"; };
+		04A2F9BA2534D51E0063A31B /* FireBall.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FireBall.hpp; sourceTree = "<group>"; };
+		04A2F9BB2534D51E0063A31B /* FireBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FireBall.cpp; sourceTree = "<group>"; };
 		04B0623D252DC87F00E1649B /* Dagger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dagger.cpp; sourceTree = "<group>"; };
 		04B0623E252DC87F00E1649B /* Dagger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dagger.hpp; sourceTree = "<group>"; };
 		04B06241252DD0A600E1649B /* Exceptions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
@@ -85,9 +134,19 @@
 		04D7D0A4252E26F8000242FB /* Vampire.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vampire.hpp; sourceTree = "<group>"; };
 		04D7D0A6252E27AB000242FB /* Bite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bite.cpp; sourceTree = "<group>"; };
 		04D7D0A7252E27AB000242FB /* Bite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bite.hpp; sourceTree = "<group>"; };
+		04DD98662536F8C4006B3AE4 /* Healer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Healer.cpp; sourceTree = "<group>"; };
+		04DD98672536F8C4006B3AE4 /* Healer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Healer.hpp; sourceTree = "<group>"; };
+		04DD98692537082F006B3AE4 /* GreatHeal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GreatHeal.cpp; sourceTree = "<group>"; };
+		04DD986A2537082F006B3AE4 /* GreatHeal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GreatHeal.hpp; sourceTree = "<group>"; };
+		04DD987025370AD5006B3AE4 /* Priest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Priest.cpp; sourceTree = "<group>"; };
+		04DD987125370AD5006B3AE4 /* Priest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Priest.hpp; sourceTree = "<group>"; };
 		04E46DD725309096009461C4 /* Mediator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mediator.hpp; sourceTree = "<group>"; };
 		04E46DD92530910C009461C4 /* InfectMediator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InfectMediator.cpp; sourceTree = "<group>"; };
 		04E46DDA2530910C009461C4 /* InfectMediator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InfectMediator.hpp; sourceTree = "<group>"; };
+		04F2A09725339F0C00D7D8FB /* SpellCasterTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpellCasterTest.cpp; sourceTree = "<group>"; };
+		04F2A09825339F0C00D7D8FB /* VampireTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VampireTest.cpp; sourceTree = "<group>"; };
+		04F2A09B2533A0C100D7D8FB /* SpellCasterWeapon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpellCasterWeapon.hpp; sourceTree = "<group>"; };
+		04F2A09C2533A0C100D7D8FB /* SpellCasterWeapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpellCasterWeapon.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +203,10 @@
 				04797029252F982F00FE6A99 /* InfectedState.hpp */,
 				04797031252F9DC500FE6A99 /* WolfState.cpp */,
 				04797032252F9DC500FE6A99 /* WolfState.hpp */,
+				04A2F9A92534B6F20063A31B /* MagicState.cpp */,
+				04A2F9AA2534B6F20063A31B /* MagicState.hpp */,
+				049F34472537954B00C0BAE1 /* DeadState.cpp */,
+				049F34482537954B00C0BAE1 /* DeadState.hpp */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -153,6 +216,16 @@
 			children = (
 				040B8B82252CE839005A887B /* SpellCaster.cpp */,
 				040B8B83252CE839005A887B /* SpellCaster.hpp */,
+				04A2F9AE2534CB110063A31B /* Wizard.cpp */,
+				04A2F9AF2534CB110063A31B /* Wizard.hpp */,
+				04DD98662536F8C4006B3AE4 /* Healer.cpp */,
+				04DD98672536F8C4006B3AE4 /* Healer.hpp */,
+				04DD987025370AD5006B3AE4 /* Priest.cpp */,
+				04DD987125370AD5006B3AE4 /* Priest.hpp */,
+				049F34342537726200C0BAE1 /* Warlock.cpp */,
+				049F34352537726200C0BAE1 /* Warlock.hpp */,
+				049F343B25377CDB00C0BAE1 /* Necromancer.cpp */,
+				049F343C25377CDB00C0BAE1 /* Necromancer.hpp */,
 			);
 			path = SpellCaster;
 			sourceTree = "<group>";
@@ -160,8 +233,16 @@
 		040B8B85252CF416005A887B /* Spell */ = {
 			isa = PBXGroup;
 			children = (
+				04A2F9BB2534D51E0063A31B /* FireBall.cpp */,
+				04A2F9BA2534D51E0063A31B /* FireBall.hpp */,
 				040B8B86252CF448005A887B /* Spell.cpp */,
 				040B8B87252CF448005A887B /* Spell.hpp */,
+				04A2F9B12534CCF40063A31B /* Heal.cpp */,
+				04A2F9B22534CCF40063A31B /* Heal.hpp */,
+				04A2F9B72534D4BB0063A31B /* FrostBall.cpp */,
+				04A2F9B82534D4BB0063A31B /* FrostBall.hpp */,
+				04DD98692537082F006B3AE4 /* GreatHeal.cpp */,
+				04DD986A2537082F006B3AE4 /* GreatHeal.hpp */,
 			);
 			path = Spell;
 			sourceTree = "<group>";
@@ -169,6 +250,8 @@
 		040B8B89252CF51B005A887B /* Weapon */ = {
 			isa = PBXGroup;
 			children = (
+				04F2A09C2533A0C100D7D8FB /* SpellCasterWeapon.cpp */,
+				04F2A09B2533A0C100D7D8FB /* SpellCasterWeapon.hpp */,
 				040B8B8B252CF536005A887B /* Weapon.cpp */,
 				040B8B8C252CF536005A887B /* Weapon.hpp */,
 				040B8B8E252CFF9C005A887B /* Axe.cpp */,
@@ -183,6 +266,15 @@
 				0479702F252F9BD500FE6A99 /* WerewolfWeapon.hpp */,
 			);
 			path = Weapon;
+			sourceTree = "<group>";
+		};
+		042C42452535A57000D63384 /* SpellBook */ = {
+			isa = PBXGroup;
+			children = (
+				042C424B2535B03500D63384 /* SpellBook.cpp */,
+				042C424C2535B03500D63384 /* SpellBook.hpp */,
+			);
+			path = SpellBook;
 			sourceTree = "<group>";
 		};
 		0459FD9E252A73000008CE25 = {
@@ -206,6 +298,10 @@
 		0459FDA9252A73000008CE25 /* Army */ = {
 			isa = PBXGroup;
 			children = (
+				049F343E2537840A00C0BAE1 /* Observer */,
+				049F34372537735200C0BAE1 /* Pets */,
+				04DD986C25370A3F006B3AE4 /* Race */,
+				042C42452535A57000D63384 /* SpellBook */,
 				04BC085F2531E66D003B6953 /* Tests */,
 				04E46DD52530907F009461C4 /* Mediator */,
 				040B8B89252CF51B005A887B /* Weapon */,
@@ -228,13 +324,46 @@
 			path = SoldierTest;
 			sourceTree = "<group>";
 		};
+		049F34372537735200C0BAE1 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				049F34382537736000C0BAE1 /* Demon.cpp */,
+				049F34392537736000C0BAE1 /* Demon.hpp */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+		049F343E2537840A00C0BAE1 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				049F343F2537844B00C0BAE1 /* Observer.cpp */,
+				049F34402537844B00C0BAE1 /* Observer.hpp */,
+				049F3442253785BC00C0BAE1 /* Observable.cpp */,
+				049F3443253785BC00C0BAE1 /* Observable.hpp */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		04BC085F2531E66D003B6953 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				04F2A09725339F0C00D7D8FB /* SpellCasterTest.cpp */,
+				04F2A09825339F0C00D7D8FB /* VampireTest.cpp */,
 				04BC08622531E759003B6953 /* catch.hpp */,
 				04BC08602531E736003B6953 /* RogueTest.cpp */,
+				04A2F9AC2534C9A30063A31B /* UnitTest.cpp */,
+				042C42492535ADEB00D63384 /* SpellBookTest.cpp */,
+				049F3445253790F500C0BAE1 /* UnitIsDeadTest.cpp */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		04DD986C25370A3F006B3AE4 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				049F343325376E6700C0BAE1 /* Races.hpp */,
+			);
+			path = Race;
 			sourceTree = "<group>";
 		};
 		04E46DD52530907F009461C4 /* Mediator */ = {
@@ -336,26 +465,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A2F9B32534CCF40063A31B /* Heal.cpp in Sources */,
+				04DD986B2537082F006B3AE4 /* GreatHeal.cpp in Sources */,
+				049F34492537954B00C0BAE1 /* DeadState.cpp in Sources */,
 				040B8B9C252D0F49005A887B /* Rogue.cpp in Sources */,
 				0459FDAB252A73000008CE25 /* main.cpp in Sources */,
+				049F343D25377CDB00C0BAE1 /* Necromancer.cpp in Sources */,
 				04797030252F9BD500FE6A99 /* WerewolfWeapon.cpp in Sources */,
+				049F343A2537736000C0BAE1 /* Demon.cpp in Sources */,
 				04E46DDB2530910C009461C4 /* InfectMediator.cpp in Sources */,
 				0459FDB3252A73490008CE25 /* Unit.cpp in Sources */,
 				040B8B88252CF448005A887B /* Spell.cpp in Sources */,
 				040B8B84252CE839005A887B /* SpellCaster.cpp in Sources */,
 				040B8B8D252CF536005A887B /* Weapon.cpp in Sources */,
+				04F2A09A25339F0D00D7D8FB /* VampireTest.cpp in Sources */,
+				049F3446253790F500C0BAE1 /* UnitIsDeadTest.cpp in Sources */,
 				04797033252F9DC500FE6A99 /* WolfState.cpp in Sources */,
 				040B8B90252CFF9C005A887B /* Axe.cpp in Sources */,
+				04DD98682536F8C4006B3AE4 /* Healer.cpp in Sources */,
 				0479702A252F982F00FE6A99 /* InfectedState.cpp in Sources */,
 				0479702D252F9B2B00FE6A99 /* Werewolf.cpp in Sources */,
 				04D7D0A8252E27AB000242FB /* Bite.cpp in Sources */,
+				049F3444253785BC00C0BAE1 /* Observable.cpp in Sources */,
+				04A2F9B02534CB110063A31B /* Wizard.cpp in Sources */,
+				042C424A2535ADEB00D63384 /* SpellBookTest.cpp in Sources */,
 				04D7D0A2252E24E3000242FB /* Berserker.cpp in Sources */,
 				040B8B96252D0592005A887B /* Soldier.cpp in Sources */,
+				04DD987225370AD5006B3AE4 /* Priest.cpp in Sources */,
 				04B0623F252DC87F00E1649B /* Dagger.cpp in Sources */,
+				042C424D2535B03500D63384 /* SpellBook.cpp in Sources */,
+				04A2F9AB2534B6F20063A31B /* MagicState.cpp in Sources */,
 				04BC08612531E736003B6953 /* RogueTest.cpp in Sources */,
 				04D7D0A5252E26F8000242FB /* Vampire.cpp in Sources */,
+				04A2F9B92534D4BB0063A31B /* FrostBall.cpp in Sources */,
+				049F34362537726200C0BAE1 /* Warlock.cpp in Sources */,
+				049F34412537844B00C0BAE1 /* Observer.cpp in Sources */,
+				04F2A09925339F0D00D7D8FB /* SpellCasterTest.cpp in Sources */,
 				040B8B7C252CE39E005A887B /* State.cpp in Sources */,
 				040B8B99252D0973005A887B /* Sword.cpp in Sources */,
+				04A2F9AD2534C9A30063A31B /* UnitTest.cpp in Sources */,
+				04F2A09D2533A0C100D7D8FB /* SpellCasterWeapon.cpp in Sources */,
+				04A2F9BC2534D51E0063A31B /* FireBall.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

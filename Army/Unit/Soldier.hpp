@@ -9,7 +9,7 @@
 class Soldier : public Unit {
 public:
     Soldier(const std::string& name = "Soldier", int hp = 100, int dmg = 10);
-    ~Soldier();
+    virtual ~Soldier();
     
 };
 

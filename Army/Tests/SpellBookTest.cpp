@@ -3,6 +3,7 @@
 #include "../SpellBook/SpellBook.hpp"
 #include "../SpellCaster/Healer.hpp"
 #include "../SpellCaster/Priest.hpp"
+#include "../SpellCaster/Warlock.hpp"
 
 #include "../Unit/Vampire.hpp"
 
@@ -11,6 +12,7 @@ TEST_CASE("Spell Book testing", "[SpellBook]") {
     Healer* hl = new Healer("Healer", 100, 10, 100, 20);
     Priest* ps = new Priest("Priest", 100, 10, 100, 20);
     Vampire* vm = new Vampire("Vampire", 100, 10);
+    Warlock* wl = new Warlock("Warclock", 100, 10, 100, 20);
     
     SECTION( "wz test" ) {
         wz->changeSpell("FrostBall");
@@ -34,6 +36,28 @@ TEST_CASE("Spell Book testing", "[SpellBook]") {
         ps->cast(vm);
         
         REQUIRE(vm->getHitPoints() == 80);
+        
+    }
+    SECTION("test warlock") {
+        wl->createDemon();
+        wl->cast(hl);
+        wl->demonAttack(hl);
+        
+        REQUIRE(hl->getHitPoints() == 75);
+        
+    }
+    SECTION("test vampire bites spellCaster") {
+        vm->infect(wl);
+        
+        vm->attack(wl);
+        
+        REQUIRE(wl->getHitPoints() == 90);
+        
+        wl->attack(vm);
+        
+        REQUIRE(wl->getHitPoints() == 90);
+        REQUIRE(vm->getHitPoints() == 85);
+        
         
     }
     

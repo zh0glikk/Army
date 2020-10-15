@@ -1,6 +1,6 @@
 #include "GreatHeal.hpp"
 
-GreatHeal::GreatHeal(SpellCaster* owner, int manaCost) : Spell(owner, manaCost) {}
+GreatHeal::GreatHeal(SpellCaster* owner, int manaCost, int spellType) : Spell(owner, manaCost, spellType) {}
 
 GreatHeal::~GreatHeal() {
     

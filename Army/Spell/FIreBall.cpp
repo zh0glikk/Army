@@ -1,6 +1,6 @@
 #include "FireBall.hpp"
 
-FireBall::FireBall(SpellCaster* owner, int manaCost) : Spell(owner, manaCost) {}
+FireBall::FireBall(SpellCaster* owner, int manaCost, int spellType) : Spell(owner, manaCost, spellType) {}
 
 FireBall::~FireBall() {
     

@@ -5,7 +5,7 @@
 
 class FrostBall : public Spell {
 public:
-    FrostBall(SpellCaster* owner, int manaCost = 15);
+    FrostBall(SpellCaster* owner, int manaCost = 15, int spellType = 1);
     ~FrostBall();
     
     void cast(Unit* target, double otherMultipler = 1);

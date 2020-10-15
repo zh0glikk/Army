@@ -1,6 +1,6 @@
 #include "Heal.hpp"
 
-Heal::Heal(SpellCaster* owner, int manaCost) : Spell(owner, manaCost) {}
+Heal::Heal(SpellCaster* owner, int manaCost, int spellType) : Spell(owner, manaCost, spellType) {}
 
 Heal::~Heal() {
     

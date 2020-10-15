@@ -8,12 +8,10 @@
 
 #include "../Mediator/InfectMediator.hpp"
 
-#include "../Race/Undead.hpp"
-
-class Vampire : public Unit, Undead{
+class Vampire : public Unit{
 public:
     Vampire(const std::string& name = "Vampire", int hp = 150, int dmg = 10);
-    ~Vampire();
+    virtual ~Vampire();
     
     void infect(Unit* other);
 };
