@@ -6,7 +6,7 @@
 #include "../Unit/Vampire.hpp"
 #include "../Unit/Werewolf.hpp"
 
-#include "../Weapon/Bite.hpp"
+#include "../Weapon/VampireWeapon.hpp"
 #include "../Weapon/WerewolfWeapon.hpp"
 
 

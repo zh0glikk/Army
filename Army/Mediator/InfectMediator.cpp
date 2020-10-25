@@ -12,7 +12,7 @@ InfectMediator::~InfectMediator() {
 void InfectMediator::notify(Unit* victim, std::string event) const {
     if ( event == "Vampire Infect" ) {
         if (!dynamic_cast<Werewolf*>(victim)) {
-            victim->changeWeapon(new Bite(victim));
+            victim->changeWeapon(new VampireWeapon(victim));
             victim->changeRace(Undead);
         } else {
             throw CantBeInfected();

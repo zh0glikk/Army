@@ -1,12 +1,12 @@
-#include "Bite.hpp"
+#include "VampireWeapon.hpp"
 
-Bite::Bite(Unit* unit) : Weapon(unit) { }
+VampireWeapon::VampireWeapon(Unit* unit) : Weapon(unit) { }
 
-Bite::~Bite() {
+VampireWeapon::~VampireWeapon() {
     delete this->owner;
 }
 
-void Bite::attack(Unit* enemy) {
+void VampireWeapon::attack(Unit* enemy) {
     enemy->takeDamage(this->owner->getDamage());
     
     this->owner->addHp(this->owner->getDamage()/2);
@@ -16,8 +16,6 @@ void Bite::attack(Unit* enemy) {
     }
 }
 
-void Bite::counterAttack(Unit* enemy) {
+void VampireWeapon::counterAttack(Unit* enemy) {
     this->owner->takeDamage(enemy->getDamage()/2);
 }
-
-

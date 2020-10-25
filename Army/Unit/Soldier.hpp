@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "Unit.hpp"
-#include "../Weapon/Axe.hpp"
+#include "../Weapon/SoldierWeapon.hpp"
 
 class Soldier : public Unit {
 public:

@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "Unit.hpp"
-#include "../Weapon/Bite.hpp"
+#include "../Weapon/VampireWeapon.hpp"
 
 #include "../Mediator/InfectMediator.hpp"
 
