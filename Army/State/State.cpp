@@ -35,21 +35,21 @@ const std::string& State::getName() const {
 }
 
 void State::takeDamage(int dmg) {
-    ensureIsAlive();
-
     this->hitPoints -= dmg;
     if ( this->hitPoints < 0 ) {
         this->hitPoints = 0;
     }
+    
+    ensureIsAlive();
 }
 
 void State::takeMagicDamage(int dmg) {
-    ensureIsAlive();
-
     this->hitPoints -= dmg;
     if ( this->hitPoints < 0 ) {
         this->hitPoints = 0;
     }
+    
+    ensureIsAlive();
 }
 
 void State::addHp(int hp) {

@@ -4,15 +4,14 @@
 #include <iostream>
 
 #include "Unit.hpp"
-#include "../Weapon/Sword.hpp"
+#include "../Weapon/BerserkerWeapon.hpp"
 
 class Berserker : public Unit{
 public:
     Berserker(const std::string& name = "Berserker", int hp = 70, int dmg = 15);
-    ~Berserker();
+    virtual ~Berserker();
     
+    void takeMagicDamage(int dmg);
 };
-
-
 
 #endif /* Berserker_hpp */

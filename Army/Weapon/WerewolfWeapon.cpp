@@ -3,7 +3,7 @@
 WerewolfWeapon::WerewolfWeapon(Unit* unit) : Weapon(unit) {}
 
 WerewolfWeapon::~WerewolfWeapon() {
-    
+    delete this->owner;
 }
 
 void WerewolfWeapon::attack(Unit* enemy) {

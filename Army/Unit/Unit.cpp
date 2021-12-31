@@ -1,10 +1,13 @@
 #include "Unit.hpp"
 
 Unit::Unit(const std::string& name, int hp, int dmg) {
+    this->mediator = nullptr;
     this->state = new State(name, hp, dmg);
+    this->race = Human;
 }
 
 Unit::~Unit() {
+    this->notifyAboutDeath();
     delete this->state;
     delete this->weapon;
 }
@@ -25,13 +28,31 @@ const std::string& Unit::getName() const {
     return this->state->getName();
 }
 
+Race Unit::getRace() const {
+    return this->race;
+}
+
 void Unit::attack(Unit* other) {
-    this->weapon->attack(other);
+    try {
+        this->weapon->attack(other);
+    } catch(UnitIsDead e) {
+        other->notifyAboutDeath();
+        other->changeState(new DeadState(this->getName()));
+    } catch(CantAttack e) {
+        // some code when u r attacking dead unit
+    }
 }
 
 
 void Unit::counterAttack(Unit* other) {
-    this->weapon->counterAttack(other);
+    try {
+        this->weapon->counterAttack(other);
+    } catch(UnitIsDead e) {
+        other->notifyAboutDeath();
+        other->changeState(new DeadState(this->getName()));
+    } catch(CantAttack e) {
+        // some code when u r attacking dead unit
+    }
 }
 
 void Unit::takeDamage(int dmg) {
@@ -44,6 +65,22 @@ void Unit::takeMagicDamage(int dmg) {
 
 void Unit::addHp(int hp) {
     this->state->addHp(hp);
+}
+
+void Unit::setMediator(Mediator *mediator) {
+    this->mediator = mediator;
+}
+
+void Unit::changeWeapon(Weapon* weapon) {
+    this->weapon = weapon;
+}
+
+void Unit::changeState(State* state) {
+    this->state = state;
+}
+
+void Unit::changeRace(Race newRace) {
+    this->race = newRace;
 }
 
 std::ostream& operator<<(std::ostream& out, const Unit& unit) {

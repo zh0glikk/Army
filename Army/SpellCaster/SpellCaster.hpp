@@ -3,21 +3,35 @@
 
 #include <iostream>
 
+#include <map>
+
+#include "../State/MagicState.hpp"
 #include "../Unit/Unit.hpp"
+#include "../Spell/Spell.hpp"
+#include "../Weapon/SpellCasterWeapon.hpp"
 
-//class SpellCaster : public Unit {
-//private:
-//    int mana;
-//    int manaLimit;
-//    
-//public:
-//    SpellCaster(const std::string& name, int hp, int dmg, int manaLimit);
-//    ~SpellCaster();
-//    
-//    
-//    
-//};
-//
+class Spell;
 
+class SpellCaster : public Unit {
+protected:
+    MagicState* magicState;
+    Spell* spell;
+    std::map<std::string, std::shared_ptr<Spell>> spellBook;
+public:
+    SpellCaster(const std::string& name, int hp, int dmg, int manaLimit, int magicPower, double dmgMult = 1, double healMult = 1);
+    virtual ~SpellCaster();
+    
+    int getMana();
+    int getManaLimit();
+    int getMagicPower();
+    
+    virtual void cast(Unit* target, double otherMultiplier = 1);
+        
+    void changeSpell(Spell* newSpell);
+    void changeSpell(std::string spellName);
+    
+    double getDmgMuliplier();
+    double getHealingMultiplier();
+};
 
 #endif /* SpellCaster_hpp */

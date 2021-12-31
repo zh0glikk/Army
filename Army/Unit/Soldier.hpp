@@ -4,15 +4,13 @@
 #include <iostream>
 
 #include "Unit.hpp"
-#include "../Weapon/Axe.hpp"
+#include "../Weapon/SoldierWeapon.hpp"
 
 class Soldier : public Unit {
 public:
     Soldier(const std::string& name = "Soldier", int hp = 100, int dmg = 10);
-    ~Soldier();
+    virtual ~Soldier();
     
 };
-
-
 
 #endif /* Soldier_hpp */

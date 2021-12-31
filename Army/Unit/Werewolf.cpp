@@ -22,3 +22,9 @@ void Werewolf::changeState() {
         this->isWolf = false;
     }
 }
+
+void Werewolf::infect(Unit* other) {
+    InfectMediator* infMediator = new InfectMediator(this, other);
+    this->mediator->notify(other, "Werewolf Infect");
+    delete infMediator;
+}
